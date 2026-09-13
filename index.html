@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday, My Love ❤️</title>
+<style>
+  *{box-sizing:border-box}
+  body{
+    margin:0;font-family:system-ui,-apple-system,Segoe UI,sans-serif;
+    background:linear-gradient(135deg,#14001f,#2b073d,#130018);
+    color:#fff;min-height:100vh;overflow-x:hidden
+  }
+  .heart{position:fixed;bottom:-30px;font-size:20px;animation:float 7s linear infinite;opacity:.5;z-index:0}
+  @keyframes float{to{transform:translateY(-110vh) rotate(360deg);opacity:0}}
+  .wrap{position:relative;z-index:1;max-width:850px;margin:auto;padding:70px 20px}
+  .hero{text-align:center;min-height:80vh;display:flex;flex-direction:column;justify-content:center}
+  .eyebrow{letter-spacing:4px;text-transform:uppercase;font-size:12px;opacity:.65}
+  h1{font-size:clamp(48px,11vw,100px);line-height:.95;margin:18px 0}
+  .name{background:linear-gradient(90deg,#ff8ccf,#ffd0ea);-webkit-background-clip:text;color:transparent}
+  .subtitle{font-size:clamp(18px,4vw,27px);opacity:.85}
+  .btn{
+    display:inline-block;border:0;border-radius:999px;padding:14px 25px;
+    margin-top:28px;background:#fff;color:#5b124d;font-weight:700;
+    cursor:pointer;font-size:16px;box-shadow:0 10px 30px #0005
+  }
+  section{
+    background:#ffffff0d;border:1px solid #ffffff18;border-radius:28px;
+    padding:30px;margin:25px 0;backdrop-filter:blur(10px)
+  }
+  h2{text-align:center;font-size:30px;margin-top:0}
+  .reasons{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
+  .reason{
+    padding:20px;border-radius:20px;background:#ffffff0b;cursor:pointer;
+    transition:.25s;border:1px solid transparent
+  }
+  .reason:hover{transform:translateY(-4px);border-color:#ff9bd2}
+  .reason span{font-size:28px}
+  .memory{display:none;text-align:center}
+  .memory.show{display:block}
+  .photo{
+    width:100%;height:330px;border-radius:20px;object-fit:cover;
+    background:#ffffff12
+  }
+  .letter{font-size:18px;line-height:1.8;white-space:pre-line}
+  .countdown{text-align:center;font-size:38px;font-weight:800}
+  .footer{text-align:center;opacity:.55;padding:30px}
+  .music{font-size:13px;opacity:.65;text-align:center;margin-top:15px}
+  @media(max-width:600px){section{padding:22px}.photo{height:240px}}
+</style>
+</head>
+<body>
+
+<div id="hearts"></div>
+
+<div class="wrap">
+  <header class="hero">
+    <div class="eyebrow">A tiny website made only for you</div>
+    <h1>Happy Birthday<br><span class="name" id="gfName">My Love</span> ❤️</h1>
+    <p class="subtitle" id="tagline">Today isn't just your birthday. It's my favorite day because you exist.</p>
+    <div>
+      <button class="btn" onclick="reveal()">Open Your Surprise ✨</button>
+    </div>
+    <div class="music" id="musicText"></div>
+  </header>
+
+  <main id="content" style="display:none">
+    <section>
+      <h2>Why You're My Favorite Person</h2>
+      <div class="reasons" id="reasons"></div>
+    </section>
+
+    <section>
+      <h2>One Little Memory 📸</h2>
+      <img class="photo" id="photo" alt="Our memory">
+      <p style="text-align:center;opacity:.75"></p>
+    </section>
+
+    <section>
+      <h2>A Letter For You 💌</h2>
+      <div class="letter" id="letter"></div>
+    </section>
+
+    <section>
+      <h2>Another Year Of You ✨</h2>
+      <div class="countdown" id="ageText">🎂 +1 level unlocked</div>
+      <p style="text-align:center;opacity:.75">
+        More laughs. More adventures. More stupid arguments. More memories.<br>
+        And, hopefully, a lot more of me annoying you. ❤️
+      </p>
+    </section>
+  </main>
+
+  <div class="footer">Made with an unreasonable amount of ❤️</div>
+</div>
+
+<script>
+/* =========================
+   EDIT ONLY THIS SECTION
+   ========================= */
+const DATA = {
+  name: "Komal",
+
+  tagline:
+    "Today isn't just your birthday. It's my favorite day because you exist.",
+
+  reasons: [
+    ["❤️", "You make ordinary days feel special."],
+    ["😂", "You somehow make me laugh even when I don't want to."],
+    ["🌙", "Talking to you at random hours is one of my favorite things."],
+    ["🫶", "You make me feel understood."],
+    ["✨", "You are simply you — and that's more than enough."]
+  ],
+
+  photo:
+    "https://i.postimg.cc/3Jxzh2Vy/IMG20251220100834.jpg",
+
+  letter:
+`Happy birthday, beautiful. ❤️
+
+I don't know if I can fit everything I feel for you into one little webpage, but I wanted to try.
+
+Thank you for being part of my life, for the laughs, the conversations, the random moments, and all the memories we've made.
+
+I hope this year gives you everything you're wishing for — and a few beautiful surprises you didn't see coming.
+
+No matter how many birthdays come after this one, I hope I get to be there for as many of them as possible.
+
+Happy birthday, my love. ❤️
+
+Now come here. You owe me a birthday hug. 🫶`
+};
+/* ========================= */
+
+document.getElementById("gfName").textContent = DATA.name;
+document.getElementById("tagline").textContent = DATA.tagline;
+document.getElementById("photo").src = DATA.photo;
+document.getElementById("letter").textContent = DATA.letter;
+
+const reasons = document.getElementById("reasons");
+DATA.reasons.forEach(([emoji,text])=>{
+  const div=document.createElement("div");
+  div.className="reason";
+  div.innerHTML=`<span>${emoji}</span><p>${text}</p>`;
+  reasons.appendChild(div);
+});
+
+function reveal(){
+  document.getElementById("content").style.display="block";
+  document.getElementById("content").scrollIntoView({behavior:"smooth"});
+}
+
+for(let i=0;i<18;i++){
+  const h=document.createElement("div");
+  h.className="heart";
+  h.textContent=["❤️","💗","💕","💖"][i%4];
+  h.style.left=Math.random()*100+"vw";
+  h.style.animationDelay=Math.random()*7+"s";
+  h.style.fontSize=(14+Math.random()*22)+"px";
+  document.getElementById("hearts").appendChild(h);
+}
+</script>
+</body>
+</html>
