@@ -3,120 +3,92 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy Birthday, My Love ❤️</title>
+<title>Komal's Birthday Passport ❤️</title>
 <style>
-  *{box-sizing:border-box}
-  body{
-    margin:0;font-family:system-ui,-apple-system,Segoe UI,sans-serif;
-    background:linear-gradient(135deg,#14001f,#2b073d,#130018);
-    color:#fff;min-height:100vh;overflow-x:hidden
-  }
-  .heart{position:fixed;bottom:-30px;font-size:20px;animation:float 7s linear infinite;opacity:.5;z-index:0}
-  @keyframes float{to{transform:translateY(-110vh) rotate(360deg);opacity:0}}
-  .wrap{position:relative;z-index:1;max-width:850px;margin:auto;padding:70px 20px}
-  .hero{text-align:center;min-height:80vh;display:flex;flex-direction:column;justify-content:center}
-  .eyebrow{letter-spacing:4px;text-transform:uppercase;font-size:12px;opacity:.65}
-  h1{font-size:clamp(48px,11vw,100px);line-height:.95;margin:18px 0}
-  .name{background:linear-gradient(90deg,#ff8ccf,#ffd0ea);-webkit-background-clip:text;color:transparent}
-  .subtitle{font-size:clamp(18px,4vw,27px);opacity:.85}
-  .btn{
-    display:inline-block;border:0;border-radius:999px;padding:14px 25px;
-    margin-top:28px;background:#fff;color:#5b124d;font-weight:700;
-    cursor:pointer;font-size:16px;box-shadow:0 10px 30px #0005
-  }
-  section{
-    background:#ffffff0d;border:1px solid #ffffff18;border-radius:28px;
-    padding:30px;margin:25px 0;backdrop-filter:blur(10px)
-  }
-  h2{text-align:center;font-size:30px;margin-top:0}
-  .reasons{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
-  .reason{
-    padding:20px;border-radius:20px;background:#ffffff0b;cursor:pointer;
-    transition:.25s;border:1px solid transparent
-  }
-  .reason:hover{transform:translateY(-4px);border-color:#ff9bd2}
-  .reason span{font-size:28px}
-  .memory{display:none;text-align:center}
-  .memory.show{display:block}
-  .photo{
-    width:100%;height:330px;border-radius:20px;object-fit:cover;
-    background:#ffffff12
-  }
-  .letter{font-size:18px;line-height:1.8;white-space:pre-line}
-  .countdown{text-align:center;font-size:38px;font-weight:800}
-  .footer{text-align:center;opacity:.55;padding:30px}
-  .music{font-size:13px;opacity:.65;text-align:center;margin-top:15px}
-  @media(max-width:600px){section{padding:22px}.photo{height:240px}}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;min-height:100vh;overflow-x:hidden;font-family:Georgia,"Times New Roman",serif;color:#34251b;background:radial-gradient(circle at 20% 20%,#fff6d8 0 3%,transparent 25%),radial-gradient(circle at 80% 10%,#f4d9ad 0 2%,transparent 25%),linear-gradient(135deg,#4d2418,#1d0e0a 55%,#3a1712)}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.12;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:5px 5px;z-index:0}
+.wrap{position:relative;z-index:1;max-width:900px;margin:auto;padding:28px 16px 70px}
+.intro{min-height:92vh;display:flex;align-items:center;justify-content:center;text-align:center}
+.passport{width:min(760px,100%);background:#ead6a8;border:2px solid #9c7440;border-radius:16px;padding:42px 28px;box-shadow:0 28px 80px #0009;position:relative;overflow:hidden}
+.passport:after{content:"";position:absolute;inset:14px;border:1px solid #b68b52;border-radius:10px;pointer-events:none}
+.emblem{width:100px;height:100px;margin:0 auto 20px;border:3px solid #8c6238;border-radius:50%;display:grid;place-items:center;font-size:46px;box-shadow:inset 0 0 0 7px #ead6a8,inset 0 0 0 9px #8c6238}
+.kicker{letter-spacing:5px;text-transform:uppercase;font:700 12px system-ui;opacity:.7}
+h1{font-size:clamp(42px,9vw,78px);margin:16px 0 8px;line-height:.95;color:#54261b}
+h1 span{font-size:.62em;display:block;letter-spacing:8px}
+.subtitle{font-size:20px;line-height:1.5;max-width:600px;margin:20px auto;color:#674b35}
+.btn{position:relative;z-index:2;border:0;border-radius:8px;padding:15px 28px;background:#682b20;color:#fff8e9;font-weight:700;font-size:16px;cursor:pointer;box-shadow:0 8px 20px #0003;font-family:system-ui;transition:.2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 26px #0004}
+.stamp-line{margin:28px auto 0;display:flex;justify-content:center;gap:10px;flex-wrap:wrap;font:700 11px system-ui;letter-spacing:1px;opacity:.7}
+.stamp{border:2px solid #8b4438;color:#8b4438;padding:8px 10px;transform:rotate(-4deg);border-radius:4px}
+.hidden{display:none!important}.content{animation:fade .8s ease}
+@keyframes fade{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.section-title{color:#f8e8bd;text-align:center;font:700 30px system-ui;margin:55px 0 22px}
+.book{perspective:1400px;min-height:460px}
+.page{background:#f2e3bb;border-radius:12px;padding:30px;box-shadow:0 20px 55px #0007;border:1px solid #b68b52;min-height:460px;position:relative;overflow:hidden}
+.page:before{content:"";position:absolute;inset:14px;border:1px solid #c9a66c;border-radius:7px;pointer-events:none}
+.page-inner{position:relative;z-index:1}
+.page-head{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #c4a06a;padding-bottom:14px;margin-bottom:22px;font:700 12px system-ui;letter-spacing:2px;color:#805d36}
+.country{font-size:30px;color:#54261b;margin:5px 0}
+.phrase{font-size:clamp(28px,5vw,46px);line-height:1.25;text-align:center;margin:55px 5px 25px;color:#54261b}
+.translation{text-align:center;color:#806446;font:14px system-ui}
+.big-stamp{width:150px;height:150px;border:5px double #9b4438;border-radius:50%;display:grid;place-items:center;text-align:center;color:#9b4438;font:700 14px system-ui;letter-spacing:2px;transform:rotate(-12deg);margin:30px auto 20px}
+.controls{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:18px}
+.smallbtn{border:1px solid #c6a36c;background:#ead6a8;color:#54261b;padding:10px 16px;border-radius:7px;cursor:pointer;font-weight:700}
+.progress{text-align:center;color:#f8e8bd;font:13px system-ui;margin-top:14px;opacity:.8}
+.map{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:15px auto 0;max-width:720px}
+.dot{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font:11px system-ui;font-weight:700;border:1px solid #d8bd86;background:#5c2a20;color:#f5dfac;cursor:pointer}
+.dot.active{background:#e9c97e;color:#54261b;transform:scale(1.12)}
+.letter{background:#f2e3bb;border-radius:12px;padding:38px;box-shadow:0 20px 55px #0007;border:1px solid #b68b52;font-size:18px;line-height:1.9;white-space:pre-line;position:relative}
+.letter:before{content:"";position:absolute;inset:14px;border:1px solid #c9a66c;border-radius:7px;pointer-events:none}
+.letter-content{position:relative;z-index:1}
+.final{text-align:center;background:#ead6a8;color:#54261b;border-radius:14px;padding:50px 24px;box-shadow:0 20px 55px #0007;border:2px solid #9c7440}
+.final h2{font-size:clamp(38px,8vw,68px);margin:12px 0}.final p{font-size:20px;line-height:1.7;max-width:650px;margin:0 auto}
+.confetti{position:fixed;top:-20px;font-size:20px;animation:fall linear forwards;z-index:10;pointer-events:none}
+@keyframes fall{to{transform:translateY(110vh) rotate(720deg);opacity:0}}
+.heart{position:fixed;bottom:-30px;animation:float 8s linear infinite;opacity:.55;z-index:0;pointer-events:none}
+@keyframes float{to{transform:translateY(-110vh) rotate(360deg);opacity:0}}
+.music{margin-top:13px;font:12px system-ui;color:#f5dfac;opacity:.7}
+@media(max-width:600px){.passport,.page,.letter{padding:24px 18px}.phrase{margin-top:38px;font-size:27px}.page{min-height:430px}}
 </style>
 </head>
 <body>
-
 <div id="hearts"></div>
-
 <div class="wrap">
-  <header class="hero">
-    <div class="eyebrow">A tiny website made only for you</div>
-    <h1>Happy Birthday<br><span class="name" id="gfName">My Love</span> ❤️</h1>
-    <p class="subtitle" id="tagline">Today isn't just your birthday. It's my favorite day because you exist.</p>
-    <div>
-      <button class="btn" onclick="reveal()">Open Your Surprise ✨</button>
+  <div class="intro">
+    <div class="passport">
+      <div class="emblem">❤️</div>
+      <div class="kicker">Special Edition • Birthday Passport</div>
+      <h1><span>Komal's</span>Birthday Passport</h1>
+      <p class="subtitle">20 countries. 20 wishes. One very special person.</p>
+      <button class="btn" onclick="openPassport()">Open Passport ✈️</button>
+      <div class="stamp-line"><div class="stamp">LOVE</div><div class="stamp">MEMORIES</div><div class="stamp">FOREVER</div></div>
+      <div class="music">🎵 Your birthday soundtrack can play from your existing music setup.</div>
     </div>
-    <div class="music" id="musicText"></div>
-  </header>
+  </div>
 
-  <main id="content" style="display:none">
-    <section>
-      <h2>Why You're My Favorite Person</h2>
-      <div class="reasons" id="reasons"></div>
-    </section>
+  <main id="content" class="content hidden">
+    <h2 class="section-title">🌍 Your Birthday Journey</h2>
+    <div class="book">
+      <div class="page">
+        <div class="page-inner">
+          <div class="page-head"><span>KOMAL'S PASSPORT</span><span id="pageNo">01 / 20</span></div>
+          <div class="country" id="country"></div>
+          <div class="phrase" id="phrase"></div>
+          <div class="translation" id="translation"></div>
+          <div class="big-stamp">BIRTHDAY<br>APPROVED ❤️</div>
+          <div class="controls">
+            <button class="smallbtn" onclick="prev()">← Previous</button>
+            <button class="btn" onclick="next()">Next Stamp →</button>
+          </div>
+          <div class="progress" id="progress"></div>
+        </div>
+      </div>
+    </div>
+    <div class="map" id="map"></div>
 
-    <section>
-      <h2>One Little Memory 📸</h2>
-      <img class="photo" id="photo" alt="Our memory">
-      <p style="text-align:center;opacity:.75"></p>
-    </section>
-
-    <section>
-      <h2>A Letter For You 💌</h2>
-      <div class="letter" id="letter"></div>
-    </section>
-
-    <section>
-      <h2>Another Year Of You ✨</h2>
-      <div class="countdown" id="ageText">🎂 +1 level unlocked</div>
-      <p style="text-align:center;opacity:.75">
-        More laughs. More adventures. More stupid arguments. More memories.<br>
-        And, hopefully, a lot more of me annoying you. ❤️
-      </p>
-    </section>
-  </main>
-
-  <div class="footer">Made with an unreasonable amount of ❤️</div>
-</div>
-
-<script>
-/* =========================
-   EDIT ONLY THIS SECTION
-   ========================= */
-const DATA = {
-  name: "Komal",
-
-  tagline:
-    "Today isn't just your birthday. It's my favorite day because you exist.",
-
-  reasons: [
-    ["❤️", "You make ordinary days feel special."],
-    ["😂", "You somehow make me laugh even when I don't want to."],
-    ["🌙", "Talking to you at random hours is one of my favorite things."],
-    ["🫶", "You make me feel understood."],
-    ["✨", "You are simply you — and that's more than enough."]
-  ],
-
-  photo:
-    "https://i.postimg.cc/3Jxzh2Vy/IMG20251220100834.jpg",
-
-  letter:
-`Happy birthday, beautiful. ❤️
+    <h2 class="section-title">💌 A Letter For You</h2>
+    <div class="letter"><div class="letter-content">Happy birthday, beautiful. ❤️
 
 I don't know if I can fit everything I feel for you into one little webpage, but I wanted to try.
 
@@ -128,37 +100,68 @@ No matter how many birthdays come after this one, I hope I get to be there for a
 
 Happy birthday, my love. ❤️
 
-Now come here. You owe me a birthday hug. 🫶`
-};
-/* ========================= */
+Now come here. You owe me a birthday hug. 🫶</div></div>
 
-document.getElementById("gfName").textContent = DATA.name;
-document.getElementById("tagline").textContent = DATA.tagline;
-document.getElementById("photo").src = DATA.photo;
-document.getElementById("letter").textContent = DATA.letter;
+    <h2 class="section-title">🎫 Passport Complete</h2>
+    <div class="final">
+      <div style="font-size:48px">✈️❤️🌎</div>
+      <h2>Happy Birthday, Komal!</h2>
+      <p><b>20 languages.</b><br><b>20 wishes.</b><br><br>
+      No matter which language I use, my favorite wish will always be seeing you happy.<br><br>
+      <b>Happy birthday, my love. ❤️</b></p>
+    </div>
+  </main>
+</div>
 
-const reasons = document.getElementById("reasons");
-DATA.reasons.forEach(([emoji,text])=>{
-  const div=document.createElement("div");
-  div.className="reason";
-  div.innerHTML=`<span>${emoji}</span><p>${text}</p>`;
-  reasons.appendChild(div);
-});
-
-function reveal(){
-  document.getElementById("content").style.display="block";
-  document.getElementById("content").scrollIntoView({behavior:"smooth"});
+<script>
+const countries = [
+["🇮🇳","INDIA","वाढदिवसाच्या हार्दिक शुभेच्छा, कोमल!","Happy Birthday, Komal!"],
+["🇬🇧","ENGLAND","Happy Birthday, Komal!","Happy Birthday, Komal!"],
+["🇫🇷","FRANCE","Joyeux anniversaire, Komal !","Happy Birthday, Komal!"],
+["🇪🇸","SPAIN","¡Feliz cumpleaños, Komal!","Happy Birthday, Komal!"],
+["🇮🇹","ITALY","Buon compleanno, Komal!","Happy Birthday, Komal!"],
+["🇩🇪","GERMANY","Alles Gute zum Geburtstag, Komal!","Happy Birthday, Komal!"],
+["🇯🇵","JAPAN","お誕生日おめでとう、コマル！","Happy Birthday, Komal!"],
+["🇰🇷","SOUTH KOREA","생일 축하해, 코말!","Happy Birthday, Komal!"],
+["🇨🇳","CHINA","生日快乐，Komal！","Happy Birthday, Komal!"],
+["🇷🇺","RUSSIA","С днём рождения, Комал!","Happy Birthday, Komal!"],
+["🇵🇹","PORTUGAL","Feliz aniversário, Komal!","Happy Birthday, Komal!"],
+["🇹🇷","TURKEY","Doğum günün kutlu olsun, Komal!","Happy Birthday, Komal!"],
+["🇸🇦","ARABIA","عيد ميلاد سعيد يا كومال!","Happy Birthday, Komal!"],
+["🇬🇷","GREECE","Χρόνια πολλά, Komal!","Happy Birthday, Komal!"],
+["🇳🇱","NETHERLANDS","Gefeliciteerd met je verjaardag, Komal!","Happy Birthday, Komal!"],
+["🇵🇱","POLAND","Wszystkiego najlepszego z okazji urodzin, Komal!","Happy Birthday, Komal!"],
+["🇹🇭","THAILAND","สุขสันต์วันเกิดนะ โคมาล!","Happy Birthday, Komal!"],
+["🇻🇳","VIETNAM","Chúc mừng sinh nhật, Komal!","Happy Birthday, Komal!"],
+["🇮🇩","INDONESIA","Selamat ulang tahun, Komal!","Happy Birthday, Komal!"],
+["🇺🇸","USA","Happy Birthday, Komal! ❤️","Happy Birthday, Komal!"]
+];
+let current=0;
+const $=id=>document.getElementById(id);
+function render(){
+ const c=countries[current];
+ $("country").textContent=c[0]+"  "+c[1];
+ $("phrase").textContent=c[2];
+ $("translation").textContent=c[3];
+ $("pageNo").textContent=String(current+1).padStart(2,"0")+" / 20";
+ $("progress").textContent=current===19?"🎉 Final stamp! Scroll down for your letter.":"Stamp "+(current+1)+" of 20";
+ document.querySelectorAll(".dot").forEach((d,i)=>d.classList.toggle("active",i===current));
 }
-
-for(let i=0;i<18;i++){
-  const h=document.createElement("div");
-  h.className="heart";
-  h.textContent=["❤️","💗","💕","💖"][i%4];
-  h.style.left=Math.random()*100+"vw";
-  h.style.animationDelay=Math.random()*7+"s";
-  h.style.fontSize=(14+Math.random()*22)+"px";
-  document.getElementById("hearts").appendChild(h);
+function next(){
+ if(current<19){current++;render()}else{document.querySelector(".letter").scrollIntoView({behavior:"smooth",block:"center"});confetti()}
 }
+function prev(){if(current>0){current--;render()}}
+function openPassport(){$("content").classList.remove("hidden");$("content").scrollIntoView({behavior:"smooth"});render();confetti(18)}
+function confetti(n=45){
+ const chars=["🎉","✨","💖","💕","🌸","⭐"];
+ for(let i=0;i<n;i++){
+  const x=document.createElement("div");x.className="confetti";x.textContent=chars[Math.floor(Math.random()*chars.length)];
+  x.style.left=Math.random()*100+"vw";x.style.animationDuration=(2.5+Math.random()*3)+"s";x.style.fontSize=(14+Math.random()*18)+"px";
+  document.body.appendChild(x);setTimeout(()=>x.remove(),6000);
+ }
+}
+countries.forEach((c,i)=>{const d=document.createElement("div");d.className="dot";d.textContent=i+1;d.title=c[1];d.onclick=()=>{current=i;render()};$("map").appendChild(d)});
+for(let i=0;i<16;i++){const h=document.createElement("div");h.className="heart";h.textContent=["❤️","💗","💕","💖"][i%4];h.style.left=Math.random()*100+"vw";h.style.animationDelay=Math.random()*8+"s";h.style.fontSize=(14+Math.random()*20)+"px";$("hearts").appendChild(h)}
 </script>
 </body>
 </html>
